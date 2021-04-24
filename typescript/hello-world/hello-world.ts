@@ -1,7 +1,5 @@
-class HelloWorld {
+export default class HelloWorld {
   static hello(): string {
-      return 'Hello, World!'
+    return 'Hello, World!'
   }
 }
-
-export default HelloWorld

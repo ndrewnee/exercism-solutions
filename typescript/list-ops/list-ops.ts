@@ -1,8 +1,5 @@
-class List<T> {
-  values: T[]
-  constructor(values: T[] = []) {
-    this.values = values
-  }
+export default class List<T> {
+  constructor(private values: T[] = []) {}
 
   push(...el: T[]): List<T> {
     return new List([...this.values, ...el])
@@ -42,5 +39,3 @@ class List<T> {
     return this.foldr((acc, el) => acc.push(el), new List())
   }
 }
-
-export default List

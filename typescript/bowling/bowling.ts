@@ -1,4 +1,4 @@
-class Bowling {
+export default class Bowling {
   constructor(private rolls: number[] = []) {}
 
   score(): number {
@@ -68,5 +68,3 @@ class Bowling {
     return total
   }
 }
-
-export default Bowling
