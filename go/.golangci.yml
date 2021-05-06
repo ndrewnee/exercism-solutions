@@ -1,0 +1,89 @@
+run:
+  skip-files:
+    - _test\.go
+output:
+  print-issued-lines: false
+linters-settings:
+  exhaustive:
+    # indicates that switch statements are to be considered exhaustive if a
+    # 'default' case is present, even if all enum members aren't listed in the
+    # switch
+    default-signifies-exhaustive: true
+  gosimple:
+    # Select the Go version to target. The default is '1.13'.
+    go: "1.16"
+linters:
+  disable-all: true
+  enable:
+    - bodyclose
+    - deadcode
+    - depguard
+    - dogsled
+    - errcheck
+    - exhaustive
+    - gochecknoinits
+    - gocritic
+    - gofmt
+    - goimports
+    - golint
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - noctx
+    - nolintlint
+    - rowserrcheck
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - asciicheck
+    - durationcheck
+    - errorlint
+    - exportloopref
+    - forbidigo
+    - forcetypeassert
+    - gofumpt
+    - goheader
+    - gomodguard
+    - ifshort
+    - importas
+    - makezero
+    - nestif
+    - nilerr
+    - prealloc
+    - predeclared
+    - revive
+    - sqlclosecheck
+    - tparallel
+    - wastedassign
+    - whitespace
+    - cyclop
+    - dupl
+    - funlen
+    - gci
+    - gochecknoglobals
+    - gocognit
+    - goconst
+    - gocyclo
+    - godot
+    - godox
+    - goerr113
+    - gomnd
+    - gomoddirectives
+    - interfacer
+    - lll
+    - maligned
+    - nlreturn
+    - paralleltest
+    - scopelint
+    - testpackage
+    - thelper
+    - wsl
